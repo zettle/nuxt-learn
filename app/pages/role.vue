@@ -1,11 +1,9 @@
 <template>
-  <div>
-    role页
-  </div>
+  <p>我是role页面</p>
+  {{ $myXiaomingPlugin('小敏') }}
 </template>
 
 <script setup lang="ts">
-useHead({
-  title: '角色页面'
-})
+const { $myXiaomingPlugin } = useNuxtApp();
+console.log("--->", $myXiaomingPlugin('小敏'));
 </script>

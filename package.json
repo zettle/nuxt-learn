@@ -10,12 +10,17 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@element-plus/nuxt": "^1.1.4",
+    "@types/node": "^25.0.3",
+    "element-plus": "^2.12.0",
     "nuxt": "^4.2.1",
     "vue": "^3.5.25",
     "vue-router": "^4.6.3"
   },
   "packageManager": "pnpm@9.1.1+sha1.09ada6cd05003e0ced25fb716f9fda4063ec2e3b",
   "devDependencies": {
-    "sass-embedded": "^1.96.0"
+    "sass-embedded": "^1.96.0",
+    "unplugin-auto-import": "^20.3.0",
+    "unplugin-vue-components": "^30.0.0"
   }
 }

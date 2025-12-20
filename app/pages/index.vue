@@ -1,17 +1,15 @@
 <template>
   <div>
-    首页
-    pending: {{ pending }} <br />
-    {{ data }}
+    111
   </div>
 </template>
 
-<script lang="ts" setup>
-
-const { data, pending } = await useFetch('/api/getUserInfo', {
-  method: 'post',
-  headers: {
-    auth: 'xiaoming'
-  },
+<script setup lang="ts">
+definePageMeta({
+  middleware: [
+    function (to, from) {
+      console.log("匿名中间件 to, from:")
+    },
+  ]
 })
 </script>

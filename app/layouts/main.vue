@@ -1,6 +1,9 @@
 <template>
   <div>
-    hello
+    <p>这是 main 布局</p>
+    <div>
+      <slot></slot>
+    </div>
   </div>
 </template>
 
