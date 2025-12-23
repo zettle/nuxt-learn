@@ -1,15 +1,14 @@
 <template>
   <div>
-    111
+    {{data}}
+    <el-button type="primary" @change="handleChange">改变</el-button>
   </div>
 </template>
 
 <script setup lang="ts">
-definePageMeta({
-  middleware: [
-    function (to, from) {
-      console.log("匿名中间件 to, from:")
-    },
-  ]
-})
+const { data } = await useFetch('/api/getUserInfo');
+
+const handleChange = () => {
+  console.log("data--->", data.value)
+}
 </script>

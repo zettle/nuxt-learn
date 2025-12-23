@@ -1,6 +1,5 @@
 export default defineEventHandler((event) => {
-  return {
-    name: '小明',
-    age: 23
-  }
+  const str = capitalize('hello world');
+  console.log(str);
+  return str;
 });
