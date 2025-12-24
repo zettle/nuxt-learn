@@ -1,5 +1,5 @@
 <template>
-<el-button type="primary" @click="handleGetCookie">获取cookie</el-button>
+<el-button type="primary" @click="handleGetCookie">获取sdsdfs三等奖福克斯cookie</el-button>
 <el-button type="primary" @click="handleSetCookie">设置cookie</el-button>
 </template>
 
