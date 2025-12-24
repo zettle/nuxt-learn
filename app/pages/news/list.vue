@@ -11,7 +11,9 @@
 </template>
 
 <script lang="ts" setup>
-
+defineOptions({
+  name: 'news-list'
+})
 
 const haha = ref('')
 
