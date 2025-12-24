@@ -20,6 +20,8 @@
   },
   "packageManager": "pnpm@9.1.1+sha1.09ada6cd05003e0ced25fb716f9fda4063ec2e3b",
   "devDependencies": {
+    "@vant/nuxt": "^1.0.7",
+    "postcss-px-to-viewport": "^1.1.1",
     "sass-embedded": "^1.96.0",
     "unplugin-auto-import": "^20.3.0",
     "unplugin-vue-components": "^30.0.0"

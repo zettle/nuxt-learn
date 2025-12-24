@@ -1,6 +1,6 @@
 <template>
   <div>
-    news-detail
+    <el-button @click="$router.back()">返回</el-button>
     {{data}}
   </div>
 </template>

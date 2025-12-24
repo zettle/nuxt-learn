@@ -1,6 +1,7 @@
 <template>
   <div>
     新闻list页
+    <el-input v-model="haha"></el-input>
     <ul>
       <li v-for="value in data?.data" :key="value.id">
         <el-button type="primary" @click="handleGo(value.id)">{{ value.title }}</el-button>
@@ -10,6 +11,10 @@
 </template>
 
 <script lang="ts" setup>
+
+
+const haha = ref('')
+
 interface RespResult {
   code: number
   data: {id:number,title:string}[]

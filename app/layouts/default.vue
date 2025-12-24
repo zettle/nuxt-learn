@@ -1,6 +1,8 @@
 <template>
   <div>
-    <p>这是default布局</p>
+    <div>
+      <nuxt-link to="/news/list">新闻</nuxt-link>
+    </div>
     <div>
       <slot></slot>
     </div>

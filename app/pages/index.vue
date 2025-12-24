@@ -1,14 +1,22 @@
 <template>
-  <div>
-    {{data}}
-    <el-button type="primary" @change="handleChange">改变</el-button>
-  </div>
+<el-button type="primary" @click="handleGetCookie">获取cookie</el-button>
+<el-button type="primary" @click="handleSetCookie">设置cookie</el-button>
 </template>
 
 <script setup lang="ts">
-const { data } = await useFetch('/api/getUserInfo');
+const userInfoCookie = useCookie<{name:string, age:number}>('user-info', { 
+  maxAge: 60 // 60s过期
+});
 
-const handleChange = () => {
-  console.log("data--->", data.value)
-}
+const handleGetCookie = () => {
+  console.log(userInfoCookie.value);
+};
+
+const handleSetCookie = () => {
+  // 
+  userInfoCookie.value = {
+    name: 'John Doe',
+    age: new Date().getTime()
+  };
+};
 </script>
